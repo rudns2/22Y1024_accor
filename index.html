@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20221024</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="bgColor">
+  <button onclick="changeC()">배경색상</button>
+  <h1>tab click ==> move</h1>
+  <ul class="tablist">
+    <li class="tablink" onclick="tabOpen(event,'tab1')">tab1</li>
+    <li class="tablink" onclick="tabOpen(event,'tab2')">tab2</li>
+    <li class="tablink" onclick="tabOpen(event,'tab3')">tab3</li>
+    <li class="tablink" onclick="tabOpen(event,'tab4')">tab4</li>
+    <li class="tablink" onclick="tabOpen(event,'tab5')">tab5</li>
+  </ul>
+  <div>
+    <div id="tab1" class="tabcont">Tab1 Content</div>
+    <div id="tab2" class="tabcont">Tab2 Content</div>
+    <div id="tab3" class="tabcont">Tab3 Content</div>
+    <div id="tab4" class="tabcont">Tab4 Content</div>
+    <div id="tab5" class="tabcont">Tab5 Content</div>
+  </div>
+  <div id="test">test</div>
+  <section>
+    <h2 class="title">section1</h2>
+    <div class="txt_box">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.
+    </div>
+  </section>
+  <section>
+    <h2 class="title">section2</h2>
+    <div class="txt_box">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.
+    </div>
+  </section>
+  <section>
+    <h2 class="title">section3</h2>
+    <div class="txt_box">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.
+    </div>
+  </section>
+  <section>
+    <h2 class="title">section4</h2>
+    <div class="txt_box">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.
+    </div>
+  </section>
+
+
+  <!-- 공통으로 사용해야 되는 것들은 CLASS  -->
+  <!-- 하나의 이름으로 지정해 줄거면 ID를 사용한다. -->
+  <script src="js/script.js"></script>
+  <div id="a"></div>
+  nextSibling테스트
+  <div id="b">a</div>
+</body>
+
+<script>
+
+  var aDiv = document.getElementById("a");
+  console.log(aDiv.nextSibling); //nextSibling테스트
+
+  console.log(aDiv.nextElementSibling) //<div id="b"></div>
+</script>
+
+</html>

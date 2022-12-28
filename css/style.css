@@ -1,0 +1,48 @@
+@import url(../css/common/reset.css);
+
+.tablist {
+  display: flex;
+}
+
+.tablink {
+  flex: 1;
+  border: 1px solid #333;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.tabcont {
+  display: none;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #333;
+}
+
+.active {
+  background-color: red;
+}
+
+.title {
+  background-color: #eee;
+  width: 100%;
+  padding: 30px 0;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.txt_box {
+  padding: 0 30px;
+  max-height: 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.active {
+  background-color: aqua;
+}
